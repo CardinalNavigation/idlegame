@@ -1,8 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+
+  const [wood, setWood]= useState(0)
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +23,8 @@ function App() {
         >
           Learn React
         </a>
+        <h2>Total Wood: {}</h2>
+        <button>Chop Wood</button>
       </header>
     </div>
   );
